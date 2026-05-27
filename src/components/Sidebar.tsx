@@ -10,7 +10,7 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
-  ShoppingCart,
+  Crosshair,
   Zap,
   Layers,
   ShieldAlert,
@@ -83,7 +83,7 @@ export const Sidebar = ({ isCollapsed, onToggle }: SidebarProps) => {
       )}>
         <div className="flex items-center gap-4 overflow-hidden">
           <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-xl shadow-blue-900/20 flex-shrink-0">
-            <ShoppingCart size={24} />
+            <Crosshair size={24} />
           </div>
           {!isCollapsed && (
             <motion.div 
@@ -91,8 +91,8 @@ export const Sidebar = ({ isCollapsed, onToggle }: SidebarProps) => {
               animate={{ opacity: 1, x: 0 }}
               className="flex flex-col whitespace-nowrap"
             >
-              <span className="font-bold text-white text-lg tracking-tight leading-none uppercase">Field Lead Pro</span>
-              <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase tracking-[0.2em]">Lead Management</span>
+              <span className="font-bold text-white text-lg tracking-tight leading-none uppercase">EDEN</span>
+              <span className="text-[10px] font-bold text-slate-500 mt-1 uppercase tracking-[0.2em]">CRM</span>
             </motion.div>
           )}
         </div>
